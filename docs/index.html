@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MathKid - A fun and educational iOS math learning app for elementary students">
+    <meta name="keywords" content="MathKid, iOS, math learning, education, SwiftUI, open source">
+    <meta name="author" content="MathKid Team">
+    <title>MathKid - 数学小子 | iOS Math Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🧮 MathKid</h1>
+                    <p class="subtitle">数学小子</p>
+                </div>
+                <nav class="nav">
+                    <a href="#features">Features</a>
+                    <a href="#download">Download</a>
+                    <a href="#documentation">Docs</a>
+                    <a href="https://github.com/huyuhui001/MathKids" target="_blank">GitHub</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">A Fun & Educational iOS Math Learning App</h2>
+                <p class="hero-description">为小学生打造的趣味数学学习iOS应用</p>
+                <div class="hero-badges">
+                    <span class="badge">iOS 15.0+</span>
+                    <span class="badge">Swift 5.0</span>
+                    <span class="badge">100% SwiftUI</span>
+                    <span class="badge">Free & Open Source</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://github.com/huyuhui001/MathKids" class="btn btn-primary" target="_blank">
+                        <span>⭐ Star on GitHub</span>
+                    </a>
+                    <a href="#documentation" class="btn btn-secondary">
+                        <span>📖 Read Documentation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features | 核心功能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Bilingual Support</h3>
+                    <p>Full English and Chinese support with dynamic language switching</p>
+                    <p class="chinese">完整的英文和中文支持，可动态切换语言</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>8 Math Categories</h3>
+                    <p>Addition, Subtraction, Multiplication, Division (1-digit & 2-digit)</p>
+                    <p class="chinese">加减乘除（一位数和两位数）</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>3 Difficulty Levels</h3>
+                    <p>Easy, Medium, Hard - progressive difficulty system</p>
+                    <p class="chinese">简单、中等、困难 - 渐进式难度系统</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Gamification</h3>
+                    <p>Level progression, scoring system, and achievements</p>
+                    <p class="chinese">等级进阶、积分系统和成就</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Auto-Generated Questions</h3>
+                    <p>Unique questions in every session, no repetition</p>
+                    <p class="chinese">每次游戏生成独特题目，无重复</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Modern UI</h3>
+                    <p>Clean, child-friendly interface built with SwiftUI</p>
+                    <p class="chinese">简洁、儿童友好的SwiftUI界面</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Math Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Math Categories | 数学类别</h2>
+            <div class="categories-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operation 运算</th>
+                            <th>1-Digit 一位数</th>
+                            <th>2-Digit 两位数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Addition 加法</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subtraction 减法</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Multiplication 乘法</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Division 除法</strong></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technology Stack | 技术栈</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>Language 语言</h4>
+                    <p>Swift 5.0</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Framework 框架</h4>
+                    <p>100% SwiftUI</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Architecture 架构</h4>
+                    <p>MVVM Pattern</p>
+                </div>
+                <div class="tech-item">
+                    <h4>State Management 状态管理</h4>
+                    <p>Combine Framework</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Data Persistence 数据持久化</h4>
+                    <p>UserDefaults</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Localization 本地化</h4>
+                    <p>String Catalogs (.xcstrings)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Get Started | 开始使用</h2>
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>System Requirements | 系统要求</h3>
+                    <ul>
+                        <li><strong>Minimum iOS Version:</strong> iOS 15.0+</li>
+                        <li><strong>Supported Devices:</strong> iPhone, iPad</li>
+                        <li><strong>Display:</strong> Optimized for all screen sizes</li>
+                        <li><strong>Orientation:</strong> Portrait (recommended)</li>
+                    </ul>
+                </div>
+                <div class="download-buttons">
+                    <a href="https://github.com/huyuhui001/MathKids" class="btn btn-outline" target="_blank">
+                        <span>🔗 View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation">
+        <div class="container">
+            <h2 class="section-title">Documentation | 文档</h2>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h3>🌟 Overview</h3>
+                    <p>Introduction to MathKid app and key highlights</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-overview--概述" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🎯 Features</h3>
+                    <p>Complete list of math operations and gamification system</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-features--功能特色" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>📱 User Guide</h3>
+                    <p>Step-by-step guide on how to use MathKid</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-user-guide--使用指南" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🔧 Technical Specs</h3>
+                    <p>System requirements and technology stack details</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-technical-specifications--技术规格" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>💻 Installation</h3>
+                    <p>How to build and run the app</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-installation--安装说明" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🏗️ Architecture</h3>
+                    <p>MVVM pattern and app structure design</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-architecture--架构设计" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🌐 Localization</h3>
+                    <p>Bilingual support and adding new languages</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-localization--本地化" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🤝 Contributing</h3>
+                    <p>How to contribute and contribution ideas</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-contributing--贡献指南" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>📄 License</h3>
+                    <p>MIT License - Free and open source</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-license--许可证" target="_blank">Read More →</a>
+                </div>
+                <div class="doc-card">
+                    <h3>🗺️ Roadmap</h3>
+                    <p>Planned features and future development</p>
+                    <a href="https://github.com/huyuhui001/MathKids#-roadmap--路线图" target="_blank">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributing Section -->
+    <section class="contributing">
+        <div class="container">
+            <h2 class="section-title">🤝 Contributing | 贡献指南</h2>
+            <div class="contributing-content">
+                <p>We welcome contributions! This is an open-source project, and we'd love your help to make it better.</p>
+                <p class="chinese">我们欢迎贡献！这是一个开源项目，我们希望您的帮助使它变得更好。</p>
+                <div class="contribution-ideas">
+                    <h3>Contribution Ideas:</h3>
+                    <ul>
+                        <li>🌍 Add more language translations</li>
+                        <li>🎨 Design app icons and assets</li>
+                        <li>📊 Add statistics and charts</li>
+                        <li>🎵 Implement sound effects</li>
+                        <li>⏱️ Add timed challenges</li>
+                        <li>🏆 Create achievement badges</li>
+                        <li>📱 iPad-optimized layouts</li>
+                        <li>♿ Accessibility improvements</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/huyuhui001/MathKids/fork" class="btn btn-primary" target="_blank">
+                    <span>🍴 Fork Repository</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🧮 MathKid | 数学小子</h3>
+                    <p>Made with ❤️ for children learning math</p>
+                    <p class="chinese">为学习数学的孩子们用心打造</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy | 隐私政策</a></li>
+                        <li><a href="https://github.com/huyuhui001/MathKids" target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://github.com/huyuhui001/MathKids/issues" target="_blank">Report Issues</a></li>
+                        <li><a href="https://github.com/huyuhui001/MathKids/discussions" target="_blank">Discussions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-license">
+                    <h4>License</h4>
+                    <p>MIT License</p>
+                    <p>🆓 100% Free | 完全免费</p>
+                    <p>💝 Open Source | 开源</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 MathKid. All rights reserved.</p>
+                <p>⭐ Star this repo if you find it helpful! | 如果觉得有帮助，请给这个项目点个星！</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
