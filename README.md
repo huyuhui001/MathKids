@@ -1,4 +1,4 @@
-# MathKid Advanture- 数学小子 🧮
+# MathKid Advanture- 数学小能手 🧮
 
 <div align="center">
 
@@ -37,7 +37,7 @@ A fun and educational iOS math learning app for elementary students
 MathKid is a gamified math learning application designed specifically for elementary school students. It provides an engaging way to practice basic arithmetic operations (addition, subtraction, multiplication, and division) with a progression system that keeps students motivated.
 
 **中文:**
-MathKid（数学小子）是一款专为小学生设计的游戏化数学学习应用。它提供了一种有趣的方式来练习基础算术运算（加法、减法、乘法和除法），通过进阶系统保持学生的学习动力。
+MathKid（数学小能手）是一款专为小学生设计的游戏化数学学习应用。它提供了一种有趣的方式来练习基础算术运算（加法、减法、乘法和除法），通过进阶系统保持学生的学习动力。
 
 ### Key Highlights | 核心亮点
 
