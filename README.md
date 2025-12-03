@@ -1,4 +1,4 @@
-# MathKid Advanture- 数学小能手 🧮
+# MathKids Advanture- 数学小能手 🧮
 
 <div align="center">
 
@@ -34,10 +34,10 @@ A fun and educational iOS math learning app for elementary students
 ## 🌟 Overview | 概述
 
 **English:**
-MathKid is a gamified math learning application designed specifically for elementary school students. It provides an engaging way to practice basic arithmetic operations (addition, subtraction, multiplication, and division) with a progression system that keeps students motivated.
+MathKids is a gamified math learning application designed specifically for elementary school students. It provides an engaging way to practice basic arithmetic operations (addition, subtraction, multiplication, and division) with a progression system that keeps students motivated.
 
 **中文:**
-MathKid（数学小能手）是一款专为小学生设计的游戏化数学学习应用。它提供了一种有趣的方式来练习基础算术运算（加法、减法、乘法和除法），通过进阶系统保持学生的学习动力。
+MathKids（数学小能手）是一款专为小学生设计的游戏化数学学习应用。它提供了一种有趣的方式来练习基础算术运算（加法、减法、乘法和除法），通过进阶系统保持学生的学习动力。
 
 ### Key Highlights | 核心亮点
 
@@ -126,9 +126,9 @@ MathKid（数学小能手）是一款专为小学生设计的游戏化数学学�
 
 #### 1. Launch the App | 启动应用
 
-**EN:** Open MathKid on your iOS device. You'll see the main menu with your current level and score.
+**EN:** Open MathKids on your iOS device. You'll see the main menu with your current level and score.
 
-**CN:** 在iOS设备上打开MathKid。您将看到显示当前等级和分数的主菜单。
+**CN:** 在iOS设备上打开MathKids。您将看到显示当前等级和分数的主菜单。
 
 #### 2. Change Language (Optional) | 更改语言（可选）
 
@@ -245,7 +245,7 @@ MathKid（数学小能手）是一款专为小学生设计的游戏化数学学�
 #### Views | 视图
 
 ```
-- MathKidApp.swift              // App entry point | 应用入口
+- MathKidsApp.swift              // App entry point | 应用入口
 - MainMenuView.swift            // Main menu with language selector | 带语言选择器的主菜单
 - CategorySelectionView.swift   // Category selection grid | 类别选择网格
 - DifficultySelectionView.swift // Difficulty options | 难度选项
@@ -466,7 +466,7 @@ MathKid（数学小能手）是一款专为小学生设计的游戏化数学学�
 ```
 MIT License
 
-Copyright (c) 2025 MathKid
+Copyright (c) 2025 MathKids
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
