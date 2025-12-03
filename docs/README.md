@@ -20,7 +20,7 @@ To enable GitHub Pages for this repository:
    - Folder: `/docs`
 5. Click **Save**
 6. Wait a few minutes for GitHub to build and deploy your site
-7. Your site will be available at: `https://huyuhui001.github.io/MathKids/`
+7. The site will be available at: `https://huyuhui001.github.io/MathKids/`
 
 ## Features
 
@@ -50,6 +50,7 @@ To preview the site locally:
 
 1. Open `index.html` in your web browser
 2. Or use a local server:
+
    ```bash
    # Using Python
    python -m http.server 8000
@@ -57,11 +58,13 @@ To preview the site locally:
    # Using Node.js (with npx)
    npx serve
    ```
+
 3. Navigate to `http://localhost:8000` (or the appropriate port)
 
 ## Responsive Design
 
 The website is fully responsive and optimized for:
+
 - Desktop (1200px+)
 - Tablet (768px - 1199px)
 - Mobile (< 768px)
