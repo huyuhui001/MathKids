@@ -1,9 +1,10 @@
-# Xcode project files (contains personal configuration)
-*.xcodeproj/
-*.xcworkspace/
-
-# User settings
-xcuserdata/
+# User settings (keep the project files themselves!)
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+*.xcodeproj/project.xcworkspace/xcsettings/
+*.xcworkspace/xcworkspace.xcsettings
+Screenshot/
 
 # compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
