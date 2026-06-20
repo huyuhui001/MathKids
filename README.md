@@ -1,427 +1,375 @@
-# MathKids Advanture- 数学小能手 🧮
+# MathKid - 数学小能手 🧮
 
 <div align="center">
 
-A fun and educational iOS math learning app for elementary students
-
-为小学生打造的趣味数学学习iOS应用
+一个用于练习加减法的 iOS 应用
 
 [![Platform](https://img.shields.io/badge/Platform-iOS%2015.0+-blue.svg)](https://www.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org/)
+[![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-blue.svg)](https://developer.apple.com/xcode/swiftui/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Open Source](https://img.shields.io/badge/Open%20Source-❤-red.svg)](https://github.com)
 
-*Free and Open Source* | *完全免费开源*
+*完全免费开源*
 
 </div>
 
 ---
 
-## 📖 Table of Contents | 目录
+## 📖 目录
 
-- [Overview | 概述](#overview--概述)
-- [Features | 功能特色](#features--功能特色)
-- [User Guide | 使用指南](#user-guide--使用指南)
-- [Technical Specifications | 技术规格](#technical-specifications--技术规格)
-- [Installation | 安装说明](#installation--安装说明)
-- [Architecture | 架构设计](#architecture--架构设计)
-- [Localization | 本地化](#localization--本地化)
-- [Contributing | 贡献指南](#contributing--贡献指南)
-- [License | 许可证](#license--许可证)
-
----
-
-## 🌟 Overview | 概述
-
-**English:**
-MathKids is a gamified math learning application designed specifically for elementary school students. It provides an engaging way to practice basic arithmetic operations (addition, subtraction, multiplication, and division) with a progression system that keeps students motivated.
-
-**中文:**
-MathKids（数学小能手）是一款专为小学生设计的游戏化数学学习应用。它提供了一种有趣的方式来练习基础算术运算（加法、减法、乘法和除法），通过进阶系统保持学生的学习动力。
-
-### Key Highlights | 核心亮点
-
-- ✅ Bilingual interface (English/Chinese) | 双语界面（英文/中文）
-- ✅ Dynamic language switching | 动态语言切换
-- ✅ Progressive difficulty system | 渐进式难度系统
-- ✅ Gamification with levels and scores | 等级和积分游戏化
-- ✅ Auto-generated questions | 自动生成题目
-- ✅ Immediate feedback | 即时反馈
-- ✅ Clean, child-friendly UI | 简洁、儿童友好的界面
+- [概述](#-概述)
+- [功能特色](#-功能特色)
+- [使用指南](#-使用指南)
+- [技术规格](#-技术规格)
+- [项目结构](#-项目结构)
+- [架构设计](#-架构设计)
+- [游戏流程](#-游戏流程)
+- [游戏逻辑](#-游戏逻辑)
+- [本地化](#-本地化)
+- [贡献指南](#-贡献指南)
+- [路线图](#-路线图)
+- [许可证](#-许可证)
 
 ---
 
-## 🎯 Features | 功能特色
+## 🌟 概述
 
-### Math Operations | 数学运算
+**MathKid（数学小能手）** 是一个用于**练习加减法**的 iOS 应用。它采用进阶式关卡体系（入门 → 基础 → 提升），配合 MathSuperKid 风格的活泼界面，让加减法练习变得更加有趣。用户可以自定义题型与题量，获得即时反馈，并通过积分与等级系统追踪学习进度。
 
-**English:** The app supports **8 different categories** of math practice
+### 核心亮点
 
-**中文:** 应用支持 **8种不同类别** 的数学练习
-
-| Operation 运算 | 1-Digit 一位数 | 2-Digit 两位数 |
-|-----------|---------|---------|
-| **Addition 加法** | ✓ | ✓ |
-| **Subtraction 减法** | ✓ | ✓ |
-| **Multiplication 乘法** | ✓ | ✓ |
-| **Division 除法** | ✓ | ✓ |
-
-### 🎮 Gamification System | 游戏化系统
-
-**English:**
-
-- **Level Progression**: Advance through levels by earning points
-- **Score Tracking**: Cumulative score tracking across all sessions
-- **Difficulty-Based Points**:
-  - Easy: 10 points per correct answer
-  - Medium: 20 points per correct answer
-  - Hard: 30 points per correct answer
-- **Performance Feedback**: Instant visual feedback on answers
-- **Achievement System**: Track progress and celebrate success
-
-**中文:**
-
-- **等级进阶**: 通过获得积分提升等级
-- **积分追踪**: 累积所有游戏的总分数
-- **难度积分制**:
-  - 简单: 每题正确得10分
-  - 中等: 每题正确得20分
-  - 困难: 每题正确得30分
-- **即时反馈**: 答案的即时视觉反馈
-- **成就系统**: 追踪进度并庆祝成功
-
-### 📊 Difficulty Levels | 难度等级
-
-**English:** Each math category offers three difficulty levels
-
-**中文:** 每个数学类别提供三个难度等级
-
-#### Easy | 简单
-
-- **EN:** 5 questions per session, smaller number ranges, perfect for beginners
-- **CN:** 每次5道题，较小的数字范围，适合初学者
-
-#### Medium | 中等
-
-- **EN:** 8 questions per session, moderate number ranges, for developing skills
-- **CN:** 每次8道题，中等数字范围，适合技能发展
-
-#### Hard | 困难
-
-- **EN:** 10 questions per session, full number ranges, challenge mode
-- **CN:** 每次10道题，完整数字范围，挑战模式
-
-### 🌍 Bilingual Support | 双语支持
-
-- **English** - Full interface support | 完整界面支持
-- **简体中文 (Simplified Chinese)** - Complete Chinese localization | 完整中文本地化
-- **Dynamic Language Switching** - Change language on-the-fly without restarting | 无需重启即可切换语言
-- **Default Language** - English (can be changed anytime from main menu) | 默认英语（可随时从主菜单更改）
+- 🎨 **MathSuperKid 风格的渐变界面**
+- 📈 **3 个渐进式关卡**（10以内 → 20以内 → 两位数）
+- 🧩 **可自定义题型与题量**（每种题型 1–999 题）
+- ✅ **即时逐题反馈**（✓/✗ 标记 + 正确答案提示）
+- 🏆 **积分与等级系统**（每答对 +10 分，每 100 分升一级）
+- 🔄 **"再练一次"自动生成新题**
+- 🚀 **100% SwiftUI，无 UIKit**
 
 ---
 
-## 📱 User Guide | 使用指南
+## 🎯 功能特色
 
-### Getting Started | 开始使用
+### 📚 三个学习阶段
 
-#### 1. Launch the App | 启动应用
+| 阶段 | Emoji | 数字范围 | 说明 |
+|------|-------|----------|------|
+| **入门** | 🌱 | 10 以内 | 简单加减法 |
+| **基础** | ☀️ | 20 以内 | 不进位 / 进位 / 不退位 / 退位 多种变体 |
+| **提升** | 🌟 | 两位数 | 两位数加减法 |
 
-**EN:** Open MathKids on your iOS device. You'll see the main menu with your current level and score.
+### 🧩 题型配置
 
-**CN:** 在iOS设备上打开MathKids。您将看到显示当前等级和分数的主菜单。
+每个阶段都提供精心设计的题型。用户可勾选要练习的题型，并自定义每种题型的题量（1–999 题）。
 
-#### 2. Change Language (Optional) | 更改语言（可选）
+#### 入门阶段
 
-**EN:**
+| 类型 ID | 名称 | 示例 |
+|---------|------|------|
+| `add_10` | 10 以内加法 | 3 + 5 = 8 |
+| `sub_10` | 10 以内减法 | 8 − 3 = 5 |
 
-- Tap the globe icon (🌐) in the top-right corner
-- Select "English" or "中文"
-- The entire interface updates immediately
+#### 基础阶段
 
-**CN:**
+| 类型 ID | 名称 | 示例 |
+|---------|------|------|
+| `add_no_carry_20` | 20 以内不进位加法 | 12 + 5 = 17 |
+| `sub_no_borrow_20` | 20 以内不退位减法 | 18 − 5 = 13 |
+| `add_carry_20` | 20 以内进位加法 | 8 + 5 = 13 |
+| `sub_borrow_20` | 20 以内退位减法 | 15 − 8 = 7 |
 
-- 点击右上角的地球图标 (🌐)
-- 选择 "English" 或 "中文"
-- 整个界面会立即更新
+#### 提升阶段
 
-#### 3. Start Learning | 开始学习
+| 类型 ID | 名称 | 示例 |
+|---------|------|------|
+| `add_2digit` | 两位数加法 | 23 + 45 = 68 |
+| `sub_2digit` | 两位数减法 | 68 − 23 = 45 |
 
-**EN:** Tap "Start Game" and browse through the available math categories
+### 🎮 游戏化系统
 
-**CN:** 点击"开始游戏"并浏览可用的数学类别
+- **答对得分**：每题答对 **+10 分**（固定）
+- **升级规则**：`Level = (总积分 / 100) + 1` —— 每 **100 分**升一级
+- **累积积分**：通过 `UserProgress` 跨会话追踪
+- **重置进度**：调用 `UserProgress.reset()` 清空
 
-### Playing a Game | 游戏玩法
+### 📊 实时统计栏
 
-#### Step 1: Select a Category | 选择类别
+练习过程中，顶部统计栏实时显示：
 
-**EN:** Choose from 8 different math operations (e.g., "1-Digit Addition", "2-Digit Multiplication")
+| 统计 | 图标 | 说明 |
+|------|------|------|
+| 正确 | ✅ | 答对题数 |
+| 错误 | ❌ | 答错题数 |
+| 得分 | ⭐ | 当前会话得分 |
+| 用时 | ⏱️ | 已用时间（mm分ss秒） |
 
-**CN:** 从8种不同的数学运算中选择（例如："一位数加法"、"两位数乘法"）
+### 🎯 结果反馈
 
-#### Step 2: Choose Difficulty | 选择难度
+表现评语根据正确率自动调整：
 
-**EN:** Select Easy, Medium, or Hard. See the number of questions and points per question.
+| 正确率 | 图标 | 评语 |
+|--------|------|------|
+| ≥ 90% | 🏆 trophy.fill | "太棒了！🎉" / "完美表现！" |
+| ≥ 70% | ⭐ star.fill | "做得不错！🌟" / "表现优秀！" |
+| ≥ 50% | 🚩 flag.fill | "还需努力！" |
+| < 50% | 🚩 flag.fill | "继续加油！💪" |
 
-**CN:** 选择简单、中等或困难。查看题目数量和每题分数。
+### ⚙️ 类别选择工具
 
-#### Step 3: Answer Questions | 回答问题
-
-**EN:**
-
-- Read the math question
-- Type your answer in the text field
-- Tap "Submit"
-- Get immediate feedback (✓ or ✗)
-- Tap "Next" to continue
-
-**CN:**
-
-- 阅读数学题目
-- 在文本框中输入答案
-- 点击"提交"
-- 获得即时反馈（✓ 或 ✗）
-- 点击"下一题"继续
-
-#### Step 4: View Results | 查看结果
-
-**EN:** After completing all questions, see your performance, score, accuracy, and level progression
-
-**CN:** 完成所有题目后，查看您的表现、分数、正确率和等级进度
-
-### Navigation Tips | 导航提示
-
-| English | 中文 |
-|---------|------|
-| **Back to Menu**: Use the back button in any screen | **返回菜单**: 在任何界面使用返回按钮 |
-| **Play Again**: From results screen, retry the same difficulty | **再玩一次**: 从结果界面重试相同难度 |
-| **Home**: Return to the main menu | **主页**: 返回主菜单 |
+- **全选 / 全不选**：一键勾选或取消所有题型
+- **综合练习开关**：自动全选所有题型
+- **每种题型独立设置题量**：1–999 题自由配置
 
 ---
 
-## 🔧 Technical Specifications | 技术规格
+## 📱 使用指南
 
-### System Requirements | 系统要求
-
-| Item 项目 | Requirement 要求 |
-|-----------|-----------------|
-| **Minimum iOS Version 最低iOS版本** | iOS 15.0 |
-| **Supported Devices 支持设备** | iPhone, iPad |
-| **Orientation 屏幕方向** | Portrait (recommended) 竖屏（推荐） |
-| **Display 显示** | Optimized for all screen sizes 所有屏幕尺寸优化 |
-
-### Technology Stack | 技术栈
-
-**English:**
-
-- **Language**: Swift 5.0
-- **Framework**: SwiftUI (100% SwiftUI, no UIKit)
-- **Architecture**: MVVM (Model-View-ViewModel)
-- **State Management**: `@StateObject`, `@EnvironmentObject`, Combine framework
-- **Data Persistence**: UserDefaults
-- **Localization**: String Catalogs (.xcstrings)
-
-**中文:**
-
-- **语言**: Swift 5.0
-- **框架**: SwiftUI（100% SwiftUI，无UIKit）
-- **架构**: MVVM（模型-视图-视图模型）
-- **状态管理**: `@StateObject`、`@EnvironmentObject`、Combine框架
-- **数据持久化**: UserDefaults
-- **本地化**: 字符串目录（.xcstrings）
-
-### Core Components | 核心组件
-
-#### Models | 模型
+### 游戏流程
 
 ```
-- AppSettings.swift       // Language and app configuration | 语言和应用配置
-- MathCategory.swift      // Math operation categories | 数学运算类别
-- DifficultyLevel.swift   // Difficulty settings | 难度设置
-- MathQuestion.swift      // Question data structure | 题目数据结构
-- UserProgress.swift      // User stats and progression | 用户统计和进度
-- GameSession.swift       // Game state management | 游戏状态管理
+1. MainMenuView         →  选择阶段（入门 / 基础 / 提升）
+   主菜单
+
+2. CategorySelectionView →  勾选题型并设置题量
+   类别选择
+
+3. GameView             →  答题并提交
+   练习界面
+
+4. ResultView           →  查看成绩、再练一次或返回主页
+   结果界面
 ```
 
-#### Views | 视图
+### 分步操作
 
-```
-- MathKidsApp.swift              // App entry point | 应用入口
-- MainMenuView.swift            // Main menu with language selector | 带语言选择器的主菜单
-- CategorySelectionView.swift   // Category selection grid | 类别选择网格
-- DifficultySelectionView.swift // Difficulty options | 难度选项
-- GameView.swift                // Interactive quiz interface | 交互式测验界面
-- ResultView.swift              // Results and statistics | 结果和统计
-```
+#### 1. 启动并选择阶段
 
-#### Helpers | 辅助工具
+打开 MathKid。点击阶段卡片（🌱 入门 / ☀️ 基础 / 🌟 提升），再点击底部 **"开始练习"** 按钮进入下一步。
 
-```
-- QuestionGenerator.swift // Auto-generates math questions | 自动生成数学题目
-- LocalizedText.swift     // Localization helper component | 本地化辅助组件
-```
+#### 2. 配置题型
 
-### Question Generation Algorithm | 题目生成算法
+- ✅ 点击圆形复选框选择/取消题型
+- 🔢 点击数字框设置题目数量（1–999）
+- 🌐 打开 **"综合练习"** 开关将自动全选所有题型
+- 📊 总题数会动态显示
+- ▶️ 点击 **"开始练习"** 开始答题
 
-**English:**
+#### 3. 答题
 
-- **Random Generation**: All questions are randomly generated
-- **No Duplicates**: Questions within a session are unique
-- **Appropriate Ranges**: Number ranges match difficulty level
-- **Division**: Only generates questions with no remainders
+- 在每道题的输入框中输入答案
+- 状态图标含义：⭕（未答）、🟠 省略号（有答案未提交）、✅（正确）、❌（错误）
+- 答完题后点击 **"提交答案"** 一次性提交所有答案
+- 答错的题目会以红色显示正确答案
+- 点击 **"完成练习"** 查看结果
 
-**中文:**
+#### 4. 查看结果
 
-- **随机生成**: 所有题目都是随机生成的
-- **无重复**: 同一游戏内的题目不重复
-- **适当范围**: 数字范围匹配难度等级
-- **除法**: 只生成无余数的除法题目
+结果界面显示正确率、得分、用时、总分和当前等级。可选择 **"再练一次"** 重新生成同一阶段的题目，或 **"返回主页"** 回到主菜单。
+
+### 导航提示
+
+| 操作 | 说明 |
+|------|------|
+| **返回菜单** | 在任意界面使用"返回"按钮 |
+| **再练一次** | 在结果界面重新生成新题 |
+| **主页** | 返回主菜单 |
 
 ---
 
-## 🏗️ Architecture | 架构设计
+## 🔧 技术规格
 
-### MVVM Pattern | MVVM模式
+### 系统要求
 
-```text
-┌─────────────────────────────────────┐
-│        Views (SwiftUI)              │
-│        视图层 (SwiftUI)              │
-│  - MainMenuView                     │
-│  - CategorySelectionView            │
-│  - GameView, etc.                   │
-└─────────────┬───────────────────────┘
-              │
-              ↓
-┌─────────────────────────────────────┐
-│     ViewModels/Models               │
-│     视图模型/模型层                   │
-│  - UserProgress (ObservableObject)  │
-│  - AppSettings (ObservableObject)   │
-│  - GameSession                      │
-└─────────────┬───────────────────────┘
-              │
-              ↓
-┌─────────────────────────────────────┐
-│        Data Layer                   │
-│        数据层                         │
-│  - UserDefaults                     │
-│  - Bundle (Localization)            │
-└─────────────────────────────────────┘
-```
+| 项目 | 要求 |
+|------|------|
+| **最低 iOS 版本** | iOS 15.0 |
+| **支持设备** | iPhone, iPad |
+| **屏幕方向** | 竖屏（推荐） |
+| **显示** | 所有屏幕尺寸优化 |
+| **Xcode 版本** | Xcode 15.0+ |
 
-### State Management | 状态管理
+### 技术栈
 
-**English:**
-
-- **@StateObject**: For view-owned state
-- **@EnvironmentObject**: For shared app-wide state
-- **@Published**: For automatic view updates
-- **Combine**: For reactive data flow
-
-**中文:**
-
-- **@StateObject**: 用于视图拥有的状态
-- **@EnvironmentObject**: 用于应用级共享状态
-- **@Published**: 用于自动视图更新
-- **Combine**: 用于响应式数据流
-
-### Data Flow | 数据流
-
-| Step 步骤 | English | 中文 |
-|-----------|---------|------|
-| 1 | User interacts with View | 用户与视图交互 |
-| 2 | View updates ViewModel state | 视图更新视图模型状态 |
-| 3 | ViewModel processes business logic | 视图模型处理业务逻辑 |
-| 4 | Model data changes trigger view updates | 模型数据变化触发视图更新 |
-| 5 | UserDefaults persists user preferences | UserDefaults持久化用户偏好 |
+- **语言**：Swift 5.0
+- **UI 框架**：SwiftUI（100% SwiftUI，无 UIKit）
+- **架构**：MVVM + ObservableObject
+- **状态管理**：`@StateObject`、`@EnvironmentObject`、`@Published`、Combine
+- **数据持久化**：UserDefaults（语言偏好）
+- **本地化**：字符串目录（`.xcstrings`）
+- **导航**：`NavigationStack` + 自定义 `NavigationManager`（共享状态）
 
 ---
 
-## 🌐 Localization | 本地化
+## 📁 项目结构
 
-### Supported Languages | 支持的语言
+```
+MathKid/
+├── MathKidApp.swift                  # 应用入口 (@main)
+├── ContentView.swift                 # 根视图，注入环境对象
+├── Info.plist                        # 应用配置
+├── Localizable.xcstrings             # 字符串目录
+│
+├── Models/                           # 数据模型
+│   ├── AppSettings.swift             # 语言与应用配置
+│   ├── DifficultyLevel.swift         # 难度枚举 (easy/medium/hard/custom)
+│   ├── MathQuestion.swift            # 运算类型 (addition/subtraction)
+│   └── UserProgress.swift            # 积分、等级
+│
+├── Views/                            # SwiftUI 视图
+│   ├── MainMenuView.swift            # 关卡选择 + 提示
+│   │                                 # + LevelType 枚举 + Color(hex) 扩展
+│   ├── CategorySelectionView.swift   # 题型与题量配置
+│   │                                 # + LevelInfo / QuestionTypeConfig
+│   ├── GameView.swift                # 答题界面 + GameSession
+│   │                                 # + QuestionGenerator + MathQuestion
+│   └── ResultView.swift              # 结果页
+│
+└── Helpers/                          # 辅助工具
+    ├── LocalizedText.swift           # 本地化文本组件
+    └── NavigationManager.swift       # 导航状态管理
+```
 
-| Language 语言 | Code 代码 | Completeness 完成度 |
-|--------------|----------|-------------------|
-| English 英语 | `en` | ✅ 100% |
-| 简体中文 | `zh-Hans` | ✅ 100% |
+---
 
-### Localization Files | 本地化文件
+## 🏗️ 架构设计
 
-**English:**
+### MVVM 模式
 
-- `Localizable.xcstrings` - String catalog with all translations
-- Includes 50+ localized strings covering:
-  - UI elements
-  - Math categories
-  - Difficulty levels
-  - Game feedback
-  - Navigation elements
+```
+┌──────────────────────────────────────────┐
+│              Views (SwiftUI)             │
+│              视图层 (SwiftUI)              │
+│  - MainMenuView                          │
+│  - CategorySelectionView                 │
+│  - GameView                              │
+│  - ResultView                            │
+└─────────────────┬────────────────────────┘
+                  │ @EnvironmentObject
+                  ↓
+┌──────────────────────────────────────────┐
+│        ViewModels / ObservableObjects    │
+│        视图模型 / 可观察对象                │
+│  - AppSettings      (language, locale)   │
+│  - UserProgress     (score, level)       │
+│  - NavigationManager (nav state)         │
+│  - GameSession      (quiz session)       │
+└─────────────────┬────────────────────────┘
+                  │
+                  ↓
+┌──────────────────────────────────────────┐
+│              Data / Models               │
+│              数据 / 模型                   │
+│  - LevelType, DifficultyLevel            │
+│  - MathQuestion, QuestionTypeConfig      │
+│  - UserDefaults (language persistence)   │
+└──────────────────────────────────────────┘
+```
 
-**中文:**
+### 状态管理
 
-- `Localizable.xcstrings` - 包含所有翻译的字符串目录
-- 包含50+个本地化字符串，涵盖:
-  - UI元素
-  - 数学类别
-  - 难度等级
-  - 游戏反馈
-  - 导航元素
+| 包装器 | 用途 | 使用位置 |
+|--------|------|----------|
+| `@StateObject` | 视图私有状态 | `ContentView`, `GameView`, `MainMenuView` |
+| `@EnvironmentObject` | 应用级共享状态 | `AppSettings`, `UserProgress`, `NavigationManager` |
+| `@Published` | 响应式属性 | 所有 ObservableObject 模型 |
+| `@State` | 局部视图状态 | 表单输入、导航标志 |
+| `@Binding` | 双向绑定 | `QuestionTypeConfig` 编辑器 |
 
-### Adding New Languages | 添加新语言
+### 导航流程
 
-**English:**
+`NavigationManager` 集中管理导航状态：
 
-1. Open `Localizable.xcstrings` in Xcode
-2. Click the "+" button to add a new language
-3. Translate all keys for the new language
-4. Add language option to `MainMenuView.swift`
-5. Test the new language thoroughly
+```
+MainMenuView
+   │  点击阶段卡片
+   ↓
+CategorySelectionView (selectedLevel)
+   │  点击"开始练习"
+   ↓
+GameView (level, difficulty, questionCount)
+   │  点击"完成练习"
+   ↓
+ResultView (gameSession)
+   │  "再练一次" → gameResetTrigger++ → GameView 重新生成题目
+   │  "返回主页" → shouldPopToRoot → 回到 MainMenuView
+```
 
-**中文:**
+---
 
-1. 在Xcode中打开 `Localizable.xcstrings`
-2. 点击"+"按钮添加新语言
-3. 为新语言翻译所有键
-4. 在 `MainMenuView.swift` 中添加语言选项
+## 🎲 游戏逻辑
+
+### 题目生成
+
+在 `GameView.swift` 的 `QuestionGenerator` 中实现：
+
+- **随机生成**：每次会话在 `onAppear` 时生成全新题目
+- **0 也是有效答案**：只有非空答案才会被自动提交
+- **减法约束**：`num2 ≤ num1`，避免出现负数结果
+- **重练重新生成**：点击"再练一次"会递增 `gameResetTrigger`，触发 `GameView.onAppear` 重新生成题目
+
+### 评分规则
+
+```swift
+// GameSession.submitAnswer
+if answer == question.correctAnswer {
+    correctAnswers += 1
+    score += 10      // 固定 10 分
+} else {
+    wrongAnswers += 1
+}
+```
+
+### 等级计算
+
+```swift
+// UserProgress.updateLevel
+currentLevel = (totalScore / 100) + 1
+```
+
+| 总分 | 等级 |
+|------|------|
+| 0–99 | 1 |
+| 100–199 | 2 |
+| 200–299 | 3 |
+| ... | ... |
+
+---
+
+## 🌐 本地化
+
+### 支持的语言
+
+| 语言 | 代码 | 状态 |
+|------|------|------|
+| English | `en` | ✅ 支持 |
+| 简体中文 | `zh-Hans` | ✅ 支持 |
+
+### 本地化文件
+
+- `Localizable.xcstrings` —— 包含所有翻译的字符串目录
+- `AppSettings` 提供 `localizedString(_:)` 和 `currentLocale`
+- `LocalizedText` 是 SwiftUI 封装组件
+
+> ⚠️ **提示**：虽然本地化基础设施已就位，但当前大部分 UI 文案仍为中文硬编码。后续工作应将硬编码字符串迁移至 `Localizable.xcstrings` 以实现完整的双语支持。
+
+### 添加新语言
+
+1. 在 Xcode 中打开 `Localizable.xcstrings`
+2. 点击 "+" 添加新语言
+3. 翻译所有键
+4. 将硬编码字符串替换为 `appSettings.localizedString(_:)`
 5. 全面测试新语言
 
 ---
 
-## 🤝 Contributing | 贡献指南
+## 🤝 贡献指南
 
-**English:** We welcome contributions! This is an open-source project, and we'd love your help to make it better.
+我们欢迎贡献！这是一个开源项目，我们希望您的帮助使它变得更好。
 
-**中文:** 我们欢迎贡献！这是一个开源项目，我们希望您的帮助使它变得更好。
+### 如何贡献
 
-### How to Contribute | 如何贡献
-
-**English:**
-
-1. **Fork the Repository**
-2. **Create a Feature Branch**
-
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-
-3. **Commit Your Changes**
-
-   ```bash
-   git commit -m 'Add some amazing feature'
-   ```
-
-4. **Push to the Branch**
-
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-
-5. **Open a Pull Request**
-
-**中文:**
-
-1. **Fork仓库**
+1. **Fork 仓库**
 2. **创建功能分支**
 
    ```bash
@@ -440,33 +388,61 @@ MathKids（数学小能手）是一款专为小学生设计的游戏化数学学
    git push origin feature/amazing-feature
    ```
 
-5. **开启Pull Request**
+5. **开启 Pull Request**
 
-### Contribution Ideas | 贡献想法
+### 贡献想法
 
-| English | 中文 |
-|---------|------|
-| 🌍 Add more language translations | 添加更多语言翻译 |
-| 🎨 Design app icons and assets | 设计应用图标和资源 |
-| 📊 Add statistics and charts | 添加统计和图表 |
-| 🎵 Implement sound effects | 实现音效 |
-| ⏱️ Add timed challenges | 添加计时挑战 |
-| 🏆 Create achievement badges | 创建成就徽章 |
-| 📱 iPad-optimized layouts | iPad优化布局 |
-| ♿ Accessibility improvements | 无障碍改进 |
-| 📝 Documentation improvements | 文档改进 |
-| 🐛 Bug fixes | Bug修复 |
+| 想法 | 说明 |
+|------|------|
+| ➕➖✖️➗ 添加乘法与除法练习 | 扩展运算类型 |
+| 🌐 完善双语字符串迁移 | 将硬编码字符串全部迁移到 `Localizable.xcstrings` |
+| 🎨 设计应用图标和资源 | 优化视觉资源 |
+| 📊 添加统计图表 | 可视化练习数据 |
+| 🎵 实现音效 | 增强反馈体验 |
+| ⏱️ 添加每题倒计时 | 增加挑战性 |
+| 🏆 创建成就徽章 | 完善游戏化系统 |
+| 📱 iPad 优化布局 | 适配大屏设备 |
+| ♿ 无障碍改进 | 支持辅助功能 |
+| 🐛 Bug 修复 | 提升稳定性 |
 
 ---
 
-## 📄 License | 许可证
+## 🗺️ 路线图
 
-### MIT License | MIT许可证
+### 计划功能
+
+| 功能 | 描述 |
+|------|------|
+| ➕➖✖️➗ 乘法与除法练习 | 扩展支持的运算类型 |
+| 🎵 音效与动画 | 增强交互反馈 |
+| ⏱️ 每题计时模式 | 增加挑战性 |
+| 📊 统计仪表板 | 详细数据展示 |
+| 🎯 自定义数字范围练习 | 灵活配置练习范围 |
+| 👥 本地多人模式 | 支持多人对战 |
+| 🏆 成就徽章 | 激励持续学习 |
+| 🌙 深色模式支持 | 适配系统主题 |
+| 📱 小组件支持 | 主屏快速入口 |
+| 🌍 更多语言支持 | 国际化扩展 |
+| ♿ 完整 VoiceOver 支持 | 提升无障碍体验 |
+
+---
+
+## 🐛 已知限制
+
+- 应用内语言切换 UI 尚未接入；当前文案以中文硬编码为主
+- `DifficultyLevel` 枚举定义了 easy/medium/hard/custom，但实际流程只使用 `custom`（由用户配置题量驱动）
+- 乘法与除法计划中，尚未实现
+
+---
+
+## 📄 许可证
+
+### MIT 许可证
 
 ```
 MIT License
 
-Copyright (c) 2025 MathKids
+Copyright (c) 2025 MathKid
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -487,69 +463,28 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-**This software is completely free and open source!**
-
 **本软件完全免费且开源！**
 
 ---
 
-## 🙏 Acknowledgments | 致谢
+## 🙏 致谢
 
-**English:**
-
-- Built with ❤️ using SwiftUI
-- Icons from SF Symbols
-- Designed for elementary students worldwide
-
-**中文:**
-
-- 用 ❤️ 使用SwiftUI构建
-- 图标来自SF Symbols
-- 为全球小学生设计
+- 用 ❤️ 使用 SwiftUI 构建
+- 图标来自 SF Symbols
+- UI 风格参考 MathSuperKid
 
 ---
 
-## 📞 Contact & Support | 联系与支持
+## 📞 联系与支持
 
-**English:**
-
-- **Issues**: Please report bugs via GitHub Issues
-- **Questions**: Open a discussion in GitHub Discussions
-- **Email**: [Your contact email]
-
-**中文:**
-
-- **问题**: 请通过GitHub Issues报告bug
-- **疑问**: 在GitHub Discussions开启讨论
-
----
-
-## 🗺️ Roadmap | 路线图
-
-### Planned Features | 计划功能
-
-| Feature 功能 | Description 描述 |
-|-------------|-----------------|
-| 🎵 Sound effects and animations | 音效和动画 |
-| ⏱️ Timed challenge mode | 计时挑战模式 |
-| 📊 Detailed statistics dashboard | 详细统计仪表板 |
-| 🎯 Custom practice mode | 自定义练习模式 |
-| 👥 Multiplayer mode (local) | 多人模式（本地） |
-| 🏆 Achievement badges | 成就徽章 |
-| 🌙 Dark mode support | 深色模式支持 |
-| 📱 Widget support | 小组件支持 |
-| ⌚ Apple Watch companion app | Apple Watch配套应用 |
-| 🌍 Additional languages | 更多语言支持 |
+- **问题**：请通过 GitHub Issues 报告 bug
+- **疑问**：在 GitHub Discussions 开启讨论
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for children learning math**
-
-**为学习数学的孩子们用心打造**
-
-⭐ **Star this repo if you find it helpful!**
+**为练习加减法用心打造**
 
 ⭐ **如果觉得有帮助，请给这个项目点个星！**
 
@@ -558,7 +493,5 @@ SOFTWARE.
 **🆓 100% Free | 完全免费**
 
 **💝 Open Source | 开源**
-
-**🎓 Educational | 教育**
 
 </div>
