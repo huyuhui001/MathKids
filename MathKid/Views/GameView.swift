@@ -107,6 +107,7 @@ struct GameView: View {
                 // 每道题的输入框（未提交前可编辑）
                 TextField("?", text: userAnswerBinding)
                     .font(.system(size: 24, weight: .bold))
+                    .foregroundColor(.black) // 确保文本颜色为黑色，提高可读性
                     .multilineTextAlignment(.center)
                     .keyboardType(.numberPad)
                     .frame(width: 80, height: 50)
